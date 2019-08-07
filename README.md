@@ -19,8 +19,7 @@ nexmo -c=balance
 ```
 
 # Sending an SMS message
-In order to send an sms you will need to have Your applications private key file along side the executable in a file called 'privateKey.pem'.
-In order to make sms work with your app you will need to edit the app.config file (or nexmo.config file after compilation) - you will need to replace the 
+In order to make sms work with your app you will need to edit the app.config file (or nexmo.exe.config file after compilation) - you will need to replace the 
 'privateKey' configuration parameter with your application's private key and you will need to replace the 'APP_ID' configuration parameter with your appId.
 
 After the CLI tool is compiled you can run it by navigating in the command line to the binary and using a command like so:
