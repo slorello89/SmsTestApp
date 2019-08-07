@@ -167,10 +167,10 @@ namespace Nexmo
         private static List<Claim> GetClaimsList(string appId)
         {
             var t = DateTime.UtcNow - new DateTime(1970, 1, 1);
-            var iat = new Claim("iat", ((Int32)t.TotalSeconds).ToString(), ClaimValueTypes.Integer32);
-            var application_id = new Claim("application_id", appId);
-            var exp = new Claim("exp", ((Int32)(t.TotalSeconds + SECONDS_EXPIRY)).ToString(), ClaimValueTypes.Integer32);
-            var jti = new Claim("jti", Guid.NewGuid().ToString());
+            var iat = new Claim("iat", ((Int32)t.TotalSeconds).ToString(), ClaimValueTypes.Integer32); // Unix Timestamp for right now
+            var application_id = new Claim("application_id", appId); // Current app ID
+            var exp = new Claim("exp", ((Int32)(t.TotalSeconds + SECONDS_EXPIRY)).ToString(), ClaimValueTypes.Integer32); // Unix timestamp for when the token expires
+            var jti = new Claim("jti", Guid.NewGuid().ToString()); // Unique Token ID
             var claims = new List<Claim>() { iat, application_id, exp, jti };
 
             return claims;
