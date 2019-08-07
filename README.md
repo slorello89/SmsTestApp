@@ -198,7 +198,7 @@ var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
 
 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
 {
-	var result = streamReader.ReadToEnd();
+    var result = streamReader.ReadToEnd();
     Console.WriteLine(result);
     Console.WriteLine("Message Sent");
 }         
