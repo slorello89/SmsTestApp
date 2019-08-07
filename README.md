@@ -212,7 +212,7 @@ The get Balance API is considerably simpler - after you have your API_Key/API_Se
 
 You will be sending the get balance request to 
 
-```
+```csharp
 private const string GET_BALANCE_URL = @"https://rest.nexmo.com/account/get-balance";
 ```
 
