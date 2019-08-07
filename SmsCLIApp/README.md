@@ -4,7 +4,7 @@ Mono Options library for command line option handling
 jose-jwt Library to preform the creation of the Java Web Tokens (JWTs)
 Bouncy Castle API to preform the RSA cryptography
 
-#Requesting Balance Data
+# Requesting Balance Data
 In order to request balance data from the app, navigate to where the nexmo executable lives and use the following CLI command
 
 ```
@@ -17,7 +17,7 @@ altertnatively you can make this request using the -c or --command option
 nexmo -c=balance
 ```
 
-#Sending an SMS message
+# Sending an SMS message
 In order to send an sms you will need to have Your applications private key file along side the executable in a file called 'privateKey.pem'.
 In order to make sms work with your app you will need to edit the app.config file (or nexmo.config file after compilation) - you will need to replace the 
 'privateKey' configuration parameter with your application's private key and you will need to replace the 'APP_ID' configuration parameter with your appId.
