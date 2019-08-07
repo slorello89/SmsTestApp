@@ -28,7 +28,7 @@ After the CLI tool is compiled you can run it by navigating in the command line 
 nexmo sms --to=15558675309 --from=15048144243 --text="Hello World \u0001F601\u0001F602"
 ```
 
-Note: Phone numbers should exclude the leading '+' or "00" and should begin with the country code, the from phone number must be a phone number registered to your nexmo Application. Emojis should be sent by escpaing the charecter and passing in it's full Unicode encoding (eg \u0001F601)
+Note: Phone numbers should exclude the leading '+' or "00" and should begin with the country code, the from phone number must be a phone number registered to your nexmo Application. Emojis can be sent either by escpaing the charecter and passing in it's full Unicode encoding (eg \u0001F601) or passing in the emoji's directly off of the Windows Emoji Keyboard
 
 # How The SMS is sent
 
