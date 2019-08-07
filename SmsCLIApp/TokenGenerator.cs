@@ -11,14 +11,12 @@ using System.Security.Cryptography;
 namespace Nexmo
 {
     public class TokenGenerator
-    {             
-        private const string PATH_TO_PRIVATE_KEY = @".\privateKey.pem";
+    {   
         private const string PATH_TO_PUBLIC_KEY = @".\publicKey.pem";
 
         public static string GenerateToken(List<Claim> claims, string privateKey)
         {   
-            RSAParameters rsaParams;
-            //var privateKey = File.ReadAllText(PATH_TO_PRIVATE_KEY);
+            RSAParameters rsaParams;        
             using (var tr = new StringReader(privateKey))
             {
                 var pemReader = new PemReader(tr);

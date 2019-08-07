@@ -1,9 +1,9 @@
 ﻿This C# application is written to provide a CLI demonstration of Nexmo's Messaging API's sms capabilities
 This application Has the following dependencies:
-Mono Options library for command line option handling
-jose-jwt Library to preform the creation of the Java Web Tokens (JWTs)
-Bouncy Castle API to preform the RSA cryptography
-Newtonsoft Json library for serializing / deseralizing JSON
+* Mono Options library for command line option handling
+* jose-jwt Library to preform the creation of the Java Web Tokens (JWTs)
+* Bouncy Castle API to preform the RSA cryptography
+* Newtonsoft Json library for serializing / deseralizing JSON
 
 # Requesting Balance Data
 In order to request balance data from the app, navigate to where the nexmo executable lives and use the following CLI command
